@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBK-yz-S3c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cr-hw-sB1">
+                                        <rect key="frame" x="0.0" y="20" width="600" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="600" id="CYs-iZ-I9A"/>
+                                            <constraint firstAttribute="height" constant="300" id="F4N-gX-hML"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HxK-7O-jTq" userLabel="I View">
+                                        <rect key="frame" x="0.0" y="340" width="600" height="300"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HxK-7O-jTq" firstAttribute="top" secondItem="6cr-hw-sB1" secondAttribute="bottom" constant="20" id="0Ny-fb-V9N"/>
+                                    <constraint firstAttribute="trailing" secondItem="6cr-hw-sB1" secondAttribute="trailing" id="D5X-H4-RuO"/>
+                                    <constraint firstItem="HxK-7O-jTq" firstAttribute="leading" secondItem="LBK-yz-S3c" secondAttribute="leading" id="Isv-8c-SKU"/>
+                                    <constraint firstAttribute="bottom" secondItem="HxK-7O-jTq" secondAttribute="bottom" constant="27" id="Pam-Z5-pBA"/>
+                                    <constraint firstItem="HxK-7O-jTq" firstAttribute="height" secondItem="6cr-hw-sB1" secondAttribute="height" id="bld-E5-hSB"/>
+                                    <constraint firstItem="HxK-7O-jTq" firstAttribute="width" secondItem="6cr-hw-sB1" secondAttribute="width" id="dGS-r9-BHR"/>
+                                    <constraint firstItem="6cr-hw-sB1" firstAttribute="leading" secondItem="LBK-yz-S3c" secondAttribute="leading" id="odQ-KH-B2i"/>
+                                    <constraint firstItem="6cr-hw-sB1" firstAttribute="top" secondItem="LBK-yz-S3c" secondAttribute="top" constant="20" id="wYT-fS-7R0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45084205332150529" green="0.8396397674231082" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LBK-yz-S3c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="17l-yz-b0f"/>
+                            <constraint firstAttribute="bottom" secondItem="LBK-yz-S3c" secondAttribute="bottom" id="F4y-bj-hNx"/>
+                            <constraint firstItem="LBK-yz-S3c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H77-x9-ZXa"/>
+                            <constraint firstItem="LBK-yz-S3c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SqK-Ke-4bG"/>
+                            <constraint firstAttribute="trailing" secondItem="LBK-yz-S3c" secondAttribute="trailing" id="hx9-fW-OgH"/>
+                            <constraint firstItem="LBK-yz-S3c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pya-id-zyJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomImgView" destination="HxK-7O-jTq" id="GHi-mj-cFj"/>
+                        <outlet property="imgView" destination="6cr-hw-sB1" id="oYa-eS-e4i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
