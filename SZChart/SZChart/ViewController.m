@@ -28,7 +28,7 @@
 }
 
 
-#pragma mark - touch action
+#pragma mark - action
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
 }
